@@ -28,10 +28,12 @@ function changeSize(input)
   if (input >= 2 && input <= 100)
   {
     popularBoard(input);
+    document.querySelector('.error').style.display = 'none'
   }
   else
   {
-    console.log("Too many squares");
+    document.querySelector('.error').style.display = 'flex'
+    document.querySelector('.error').style.color = 'red'
   }
 }
 

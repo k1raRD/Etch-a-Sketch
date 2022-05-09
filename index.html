@@ -12,15 +12,18 @@
   <div class="title"><h1>Etch-a-Sketch</h1></div>
   <div class="flex-container">
     <div class="buttons">
-      <div class="mode">Mode: Coloring</div>
+      <div class="mode">Click <span>"Here"</span> to active Mode</div>
       <button onclick="changeColor('black')">Black</button>
       <button onclick="changeColor('white')">Eraser</button>
       <button onclick="changeColor('grey')">Grey</button>
       <button type="random" onclick="changeColor('random')">Random</button>
       <button onclick="resetBoard()">Reset</button>
-      <h3>Choose size:</h3>
+      <h3>Choose size of board:</h3>
       <input type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)"/>
       <button>Set size</button>
+      <p class="error">
+        !!must be between 2 and 100
+      </p>
     </div>
     <div>
     <div class="content">
@@ -30,7 +33,7 @@
     </div>
   </div>
   <footer>
-    <h3>Made By <span>Alex Collado</span></h3>
+    <h3>Made By: <span>Alex Collado alias: K1raRD</span></h3>
   </footer>
   <script src="script.js"></script>
 </body>
