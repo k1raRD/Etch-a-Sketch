@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+body
+{
+  background-color: rgb(213, 213, 213);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Alfa Slab One',serif;
+}
+
+@keyframes arcoiris {
+  0%   {color: red}
+  20%  {color: rgb(251, 255, 0)}
+  40%  {color: rgb(0, 255, 13)}
+  60%  {color: rgb(0, 255, 242)}
+  80% {color: rgb(0, 51, 255)}
+  100% {color: rgb(255, 0, 234)}
+}
+
+
+.title
+{
+  display: flex;
+  margin-left: 200px;
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex-container
+{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.buttons
+{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.board
+{
+  width: 500px;
+  height: 500px;
+  display: grid;
+}
+
+button
+{
+  padding: 8px;
+  border: solid 1px black;
+  border-radius: 7px;
+
+}
+
+button:hover
+{
+  padding: 8px;
+  border: solid 1px black;
+  border-radius: 7px;
+  transform: scale(1.05);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: black;
+  color:rgb(213, 213, 213);
+}
+
+button:active
+{
+  background-color: black;
+  color:rgb(213, 213, 213);
+  transform: scale(1.05);
+}
+
+button:focus
+{
+  background-color: black;
+  color:rgb(213, 213, 213);
+  transform: scale(1.05);
+}
+
+button[type="random"]
+{
+  background: linear-gradient(to right, red, orange, yellow, green, blue);
+  color: black;
+}
+
+footer
+{
+  margin-top: 50px ;
+  font-size: 10px;
+}
