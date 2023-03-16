@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Etch-a-Sketch</title>
-</head>
-<body>
-  <div class="title"><h1>Etch-a-Sketch</h1></div>
-  <div class="flex-container">
-    <div class="buttons">
-      <div class="mode">Click <span>"Here"</span> to active Mode</div>
-      <button onclick="changeColor('black')">Black</button>
-      <button onclick="changeColor('white')">Eraser</button>
-      <button onclick="changeColor('grey')">Grey</button>
-      <button type="random" onclick="changeColor('random')">Random</button>
-      <button onclick="resetBoard()">Reset</button>
-      <h3>Choose size of board:</h3>
-      <input type="text" placeholder="Size of board" value="16" onchange="changeSize(this.value)"/>
-      <button>Set size</button>
-      <p class="error">
-        !!must be between 2 and 100
-      </p>
-    </div>
-    <div>
-    <div class="content">
-      <div class="board"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <h1 id="title">Etch-a-Sketch</h1>
+    <main>
+      <div class="menu">
+        <button id="startPainting">Start Painting</button>
+        <button id="rainbowColor">Raimbow</button>
+        <input type="color">
+        <button id="resetButton">reset</button>
+        <div class="size-Container">
+          <p>Size:</p>
+          <select name="" id="selectSize">
+            <option value="8">8 x 8</option>
+            <option value="16">16 x 16</option>
+            <option value="24">24 x 24</option>
+            <option value="32">32 x 32</option>
+          </select>
+        </div>
       </div>
-      
-    </div>
-  </div>
-  <footer>
-    <h3>Made By: <span>Alex Collado alias: K1raRD</span></h3>
-  </footer>
-  <script src="script.js"></script>
-</body>
+      <div class="container"></div>
+    </main>
+    <p id="copyrightMessage">Coded by K1rard</p>
+
+    <script src="index.js"></script>
+  </body>
 </html>

@@ -1,125 +1,96 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-
-
-body
-{
-  background-color: rgb(213, 213, 213);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Alfa Slab One',serif;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@keyframes arcoiris {
-  0%   {color: red}
-  20%  {color: rgb(251, 255, 0)}
-  40%  {color: rgb(0, 255, 13)}
-  60%  {color: rgb(0, 255, 242)}
-  80% {color: rgb(0, 51, 255)}
-  100% {color: rgb(255, 0, 234)}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
-
-.title
-{
-  display: flex;
-  font-size: 20px;
-  color: rgb(49, 49, 49);
-  font-family: 'Roboto', sans-serif;
+main{
+    display: flex;
 }
 
-.flex-container
-{
-  display: flex;
-  align-items: center;
-  gap: 70px;
-  padding-right: 180px;
+#title{
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 700;
 }
 
-.buttons
-{
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ccc;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
-.board
-{
-  width: 500px;
-  height: 500px;
-  display: grid;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  margin-bottom: 80px;
-
+.menu button{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 3px #666;
 }
 
-button
-{
-  padding: 12px;
-  border: solid 1px black;
-  border-radius: 7px;
-  background-color: rgb(213, 213, 213);
-  font-size: 14px;
-
+.menu button:hover{
+    background-color: rgb(198, 203, 203);
+    transform: scale(1.1);
 }
 
-button:hover
-{
-  border: solid 2px black;
-  border-radius: 7px;
-  transform: scale(1.05);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  background-color: black;
-  color:rgb(213, 213, 213);
+.menu button:active{
+    transition: transform 0.3s ease;
+    transform: scale(0.5);
 }
 
-button:active
-{
-  background-color: black;
-  color:rgb(213, 213, 213);
-  transform: scale(1.05);
+#rainbowColor{
+    background: rgb(195,34,43);
+background: linear-gradient(0deg, rgba(195,34,43,1) 0%, rgba(199,35,110,1) 5%, rgba(201,35,139,1) 11%, rgba(204,35,186,1) 17%, rgba(151,36,207,1) 23%, rgba(135,36,210,1) 30%, rgba(42,37,214,1) 37%, rgba(38,147,218,1) 44%, rgba(39,221,201,1) 50%, rgba(40,226,49,1) 59%, rgba(134,230,41,1) 67%, rgba(188,234,42,1) 75%, rgba(231,239,43,1) 85%, rgba(243,164,44,1) 92%, rgba(253,45,45,1) 100%);
 }
 
-button:focus
-{
-  background-color: black;
-  color:rgb(213, 213, 213);
-  transform: scale(1.05);
+input[type="color"]{
+    width: 150px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
-button[type="random"]
-{
-  background: linear-gradient(to right, red, orange, yellow, green, blue);
-  color: black;
+.container{
+    background-color: #ffffff;
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-p
-{
-  font-size: 12px;
+.size-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
 }
 
-span
-{
-  color: red;
+#selectSize{
+    width: 90px;
+    height: 20px;
+    font-size: 15px;
+    border: 2px solid black;
 }
 
-input
-{
-  padding: 12px;
-  border-radius: 7px;
-  border: 2px solid black;
-  font-size: 14px;
-}
-
-input:focus
-{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-footer
-{
-  margin-top: 50px ;
-  font-size: 10px;
+#copyrightMessage{
+    margin-top: 40px;
 }
